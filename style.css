@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500;600&display=swap');
+
+:root {
+    --text-base: Raleway;
+    --color-base: #0077B2;
+    --color-base2: darken(var(--color-base), 3%);
+    --color-flap: darken(var(--color-base), 20%);
+    --color-bg: lighten(var(--color-base), 48%);
+    --color-heart: #D00000;
+    --border-radius: 6px;
+    --width: 280px;
+    --height: 180px;
+    --heart-width: 50px;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    color: var(--color-base);
+}
+
+.container-fuild{
+    height: 100vh;
+    background-image: url('./image/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

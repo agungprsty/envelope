@@ -1,0 +1,17 @@
+// Vendors
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500;600&family=Roboto:wght@300;400;500;700&display=swap');
+
+// Components
+@use './variables';
+
+// h1{
+//     font-family: $fonts-base;
+// }
+
+.container-fuild{
+    height: 100vh;
+    background-image: url('../image/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

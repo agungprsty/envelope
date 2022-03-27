@@ -1,0 +1,59 @@
+/* Extra small devices (phones, 768px and down) */
+@media only screen and (max-width: $small-device) 
+{
+    .envelope{
+        width: 300px; 
+        height: 180px;
+    }
+
+    .envelope::before {
+        width: 300px;  
+        border-top: 115px solid #7873A7; 
+        border-left: 150px solid transparent; 
+        border-right: 150px solid transparent;
+    }
+
+    .envelope::after {
+        width: 300px; 
+        height: 180px;
+        background: 
+        //bottom-right
+        linear-gradient(30deg, $base-dark 47%, $shadow 50%, $base 50%) 150px 90px/ 150px 90px no-repeat, 
+        
+        //top-left
+        linear-gradient(31deg, $base 49%, $shadow 50%, transparent 50%) 0px 0px/ 152px 90px no-repeat,
+        
+        //bottom-left
+        linear-gradient(150deg, $base 50%, $shadow 50%, $base-dark 53%) 0px 90px/ 151px 90px no-repeat,
+        
+        //top-right
+        linear-gradient(148.7deg, transparent 50%, $shadow 50%, $base 51%) 150px 0px/ 150px 90px no-repeat; 
+    }
+
+    .letter {
+        top: 10px;  
+        left: 10px;  
+        width: 280px;  
+        height: 160px;  
+      
+        .body {
+          width: 240px;  
+          height: 120px; 
+            .close {
+                right: -10px;
+                top: -20px;
+            } 
+            
+            .message {
+                font-size: 10px;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: $large-device) 
+{
+    // TODO: Add Code
+}

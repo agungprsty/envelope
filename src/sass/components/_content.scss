@@ -1,0 +1,25 @@
+
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+  
+.container {
+  min-height: 100vh;
+  @include center-by-all-means;
+}
+  
+.content {
+  position: relative;
+  perspective: 600px;
+}
+  
+.shadow {
+  position: absolute;
+  width: 200px;
+  height: 1px;
+  background: transparent;
+  border-radius: 30%;
+  box-shadow: 50px 100px 10px 5px #eeeef3;
+}

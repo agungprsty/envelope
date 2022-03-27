@@ -1,5 +1,4 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 
@@ -26,7 +25,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(scss|css)$/,
+                test: /\.s[ac]ss$/i,
                 exclude: /node_modules/,
                 use: [
                     {
@@ -53,18 +52,11 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, 'src/index.html'),
             filename: 'index.html',
+            favicon: path.resolve(__dirname, 'src/image/favicon.ico'),
             clean: true,
         }),
         new MiniCssExtractPlugin({
             filename: '[name].[contenthash].css',
-        }),
-        new CopyWebpackPlugin({
-            patterns: [
-                {
-                  from: path.resolve(__dirname, 'src/components/'),
-                  to: path.resolve(__dirname, 'public'),
-                },
-            ],        
-        }),
+        })
     ]
 }

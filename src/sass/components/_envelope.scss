@@ -1,0 +1,42 @@
+.envelope {
+  position: relative;
+  width: 450px;
+  height: 270px;
+  background: linear-gradient(#cccbd7 0.5px, $base-light 0.5px) ;
+  cursor: pointer;
+}
+  
+.envelope::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 450px;
+  border-top: 172.5px solid #7873A7;
+  border-left: 225px solid transparent;
+  border-right: 225px solid transparent;
+  box-sizing: border-box;
+  z-index: 30; 
+  transform-origin: top;
+}
+  
+.envelope::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 450px;
+  height: 270px;
+  z-index: 25;
+  background: 
+    //bottom-right
+    linear-gradient(30deg, $base-dark 47%, $shadow 50%, $base 50%) 225px 135px/ 225px 135px no-repeat,
+    
+    //top-left
+    linear-gradient(31deg, $base 49%, $shadow 50%, transparent 50%) 0px 0px/ 228px 135px no-repeat,
+    
+    //bottom-left
+    linear-gradient(150deg, $base 50%, $shadow 50%, $base-dark 53%) 0px 135px/ 226px 135px no-repeat,
+    
+    //top-right
+    linear-gradient(148.7deg, transparent 50%, $shadow 50%, $base 51%) 225px 0px/ 225px 135px no-repeat;
+}

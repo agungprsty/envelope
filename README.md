@@ -12,10 +12,10 @@ This is an open envelope with new experiences.
 
 ### Library
 
-- Bootstrap ^5, refer to : https://getbootstrap.com/ for include to vendors
-- Jquery ^3.5, refer to : https://jquery.com/ for include to vendors
-- GSAP ^3.2, refer to : https://greensock.com/ for include to vendors
-- Webpack ^5, refer to : https://webpack.js.org/concepts/ for installation
+- [Bootstrap](https://getbootstrap.com/) ^5
+- [Jquery](https://jquery.com/) ^3.5
+- [GSAP](https://greensock.com/) ^3.2
+- [Webpack](https://webpack.js.org/concepts/) ^5
 
 ### Installation
 

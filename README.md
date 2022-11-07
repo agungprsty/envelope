@@ -1,6 +1,5 @@
 # Envelope Interaktif
-
-## Assets bundler
+![Envelope](src/image/envelope.png)
 
 ### Requirement : 
 - Bootstrap ^5, please refer to : https://getbootstrap.com/ for include to vendors
@@ -14,40 +13,18 @@
 npm install
 ```
 
-or, if you are using yarn 
-
-```
-yarn 
-```
-
 ### Build
 
 ```
 npm run build
-```
-or, if you are using yarn 
-
-```
-yarn build
 ```
 
 ### Watch mode 
 ```
 npm run watch
 ```
-or, if you are using yarn 
-
-```
-yarn watch
-```
 
 ### Development mode 
 ```
 npm run dev
 ```
-or, if you are using yarn 
-
-```
-yarn dev
-```
-
